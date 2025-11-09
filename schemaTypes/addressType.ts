@@ -23,6 +23,13 @@ export const addressType = defineType({
       name: 'state',
       type: 'string',
       title: 'State',
+      options: {
+        list: [
+          {title: 'CA', value: 'CA'},
+          {title: 'NC', value: 'NC'},
+          {title: 'TX', value: 'TX'},
+        ]
+      },
       validation: (rule) => rule.required(),
     },{
       name: 'zip',
